@@ -117,3 +117,16 @@ The repository includes CI, CodeQL analysis, Dependabot configuration, issue tem
 ## License
 
 This project is released under the MIT License. See [LICENSE](LICENSE) for details.
+
+## Project Documentation
+
+- [Architecture](docs/architecture.md)
+- [Security Model](docs/security-model.md)
+- [Terminology](docs/terminology.md)
+- [Demo Walkthrough](docs/demo-walkthrough.md)
+
+## Security and Privacy Notes
+
+This project is designed as a local-first document workflow. Uploaded documents, generated archives, local databases, runtime configuration, and private OCR output are excluded from version control by default.
+
+Use only synthetic examples in issues, pull requests, screenshots, and public demos.
