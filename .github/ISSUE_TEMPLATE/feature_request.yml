@@ -1,0 +1,54 @@
+name: Feature request
+description: Suggest an improvement or new capability
+title: "Feature: "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement. Please focus on open-source workflows and avoid sharing private business data.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What workflow would this improve?
+      placeholder: Describe the user problem or document automation use case.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What should change?
+      placeholder: Describe the feature or improvement.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      placeholder: Describe any alternative approaches.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Project area
+      options:
+        - Backend API
+        - Frontend UI
+        - OCR and extraction
+        - Documentation
+        - Testing and CI
+        - Security
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      placeholder: Add anonymized examples, diagrams, or references if helpful.

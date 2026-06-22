@@ -1,0 +1,35 @@
+{
+  "document_type": "invoice",
+  "language": "en",
+  "confidence": 0.93,
+  "fields": {
+    "vendor_name": "Example Vendor LLC",
+    "invoice_number": "INV-2026-0001",
+    "invoice_date": "2026-01-15",
+    "due_date": "2026-02-14",
+    "amount": 1280.5,
+    "currency": "USD",
+    "tax_amount": 96.5,
+    "counterparty": "Example Customer Inc.",
+    "payment_terms": "Net 30"
+  },
+  "line_items": [
+    {
+      "description": "Document processing service",
+      "quantity": 1,
+      "unit_price": 1000.0,
+      "amount": 1000.0
+    },
+    {
+      "description": "OCR review support",
+      "quantity": 2,
+      "unit_price": 92.0,
+      "amount": 184.0
+    }
+  ],
+  "review_status": "needs_review",
+  "notes": [
+    "This is synthetic sample data for documentation and testing.",
+    "Do not commit real invoices, contracts, credentials, or private business records."
+  ]
+}

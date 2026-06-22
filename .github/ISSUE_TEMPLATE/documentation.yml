@@ -1,0 +1,33 @@
+name: Documentation improvement
+description: Suggest an improvement to documentation, examples, or setup instructions
+title: "Docs: "
+labels: ["documentation", "triage"]
+body:
+  - type: textarea
+    id: page
+    attributes:
+      label: Page or section
+      description: Which file or section needs improvement?
+      placeholder: README.md, ROADMAP.md, backend setup, frontend setup, examples, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is unclear or missing?
+      placeholder: Explain what was confusing, incomplete, or outdated.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+      placeholder: Describe the change you would like to see.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      placeholder: Add links, commands, or anonymized examples if useful.
