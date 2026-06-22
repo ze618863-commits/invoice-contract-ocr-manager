@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 
 This project follows a simple release format inspired by [Keep a Changelog](https://keepachangelog.com/) and uses semantic versioning where practical.
 
+## Unreleased
+
+### Added
+
+- README badges for CI, CodeQL, license, and release status.
+- CodeQL workflow for Python and JavaScript security analysis.
+- Dependabot configuration for Python, npm, and GitHub Actions updates.
+- Pytest-based test skeleton for configuration, schemas, and synthetic examples.
+
+### Changed
+
+- CI now runs backend tests in addition to compile and frontend build checks.
+
 ## v0.1.0 - Initial open-source release
 
 ### Added

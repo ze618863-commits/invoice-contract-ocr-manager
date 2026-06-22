@@ -1,5 +1,10 @@
 # Invoice Contract OCR Manager
 
+[![CI](https://github.com/ze618863-commits/invoice-contract-ocr-manager/actions/workflows/ci.yml/badge.svg)](https://github.com/ze618863-commits/invoice-contract-ocr-manager/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/ze618863-commits/invoice-contract-ocr-manager/actions/workflows/codeql.yml/badge.svg)](https://github.com/ze618863-commits/invoice-contract-ocr-manager/actions/workflows/codeql.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/ze618863-commits/invoice-contract-ocr-manager)](https://github.com/ze618863-commits/invoice-contract-ocr-manager/releases)
+
 Invoice Contract OCR Manager is a local-first document processing application for importing invoices, contracts, receipts, delivery notes, and related business documents. It provides OCR extraction, document classification, structured archiving, duplicate detection, and ledger export workflows through a FastAPI backend and a React/Vite frontend.
 
 The project is designed for teams that need an offline-friendly workflow for scanning, reviewing, correcting, and archiving business documents without sending files to a hosted SaaS product.
@@ -70,6 +75,15 @@ cd frontend
 npm run build
 ```
 
+### Tests
+
+```bash
+pip install -r backend/requirements.txt -r requirements-dev.txt
+python -m pytest
+```
+
+The current test suite covers configuration handling, API schemas, and synthetic example fixtures. More integration tests are planned for upload, OCR, classification, and archive workflows.
+
 ## Configuration
 
 The application creates `config.json` automatically when needed. You can also copy the example file:
@@ -88,12 +102,15 @@ This project is intended to run locally. Documents, OCR text, local databases, a
 
 This repository is prepared for open-source release with an MIT license. The current codebase is local-first and does not require hosted infrastructure. Contributions that improve OCR accuracy, i18n, test coverage, packaging, and security hardening are welcome.
 
+## Security and maintenance
+
+The repository includes CI, CodeQL analysis, Dependabot configuration, issue templates, a pull request template, and a security policy. These workflows are intended to make public contributions easier to review and reduce the risk of committing private runtime data.
+
 ## Roadmap
 
-- Add a formal test suite outside the local `scratch/` folder.
-- Add sample redacted fixtures.
+- Expand backend tests for upload, OCR, classification, and archive workflows.
+- Add more synthetic fixtures for invoices, contracts, delivery notes, and payment receipts.
 - Add English-first UI text and optional localization.
-- Add CI for backend linting and frontend builds.
 - Improve typed API schemas and database migrations.
 - Package the desktop launcher for easier installation.
 

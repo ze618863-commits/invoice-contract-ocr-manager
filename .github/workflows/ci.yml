@@ -18,8 +18,11 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r backend/requirements.txt
+          pip install -r requirements-dev.txt
       - name: Compile backend
         run: python -m compileall backend
+      - name: Run backend tests
+        run: python -m pytest
 
   frontend:
     runs-on: ubuntu-latest
