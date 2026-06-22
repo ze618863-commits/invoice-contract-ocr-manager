@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+python_env/
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local databases and runtime state
+*.db
+*.db-shm
+*.db-wal
+sql_app.db*
+backend/sql_app.db*
+
+# User configuration and local data
+config.json
+archive/
+archive_invoices/
+uploads/
+scratch/
+
+# Packaged archives and binaries
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.exe
+*.dll
+*.pyd
+*.ico
+
+# Legacy local launcher with a non-English filename
+启动软件.bat
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/

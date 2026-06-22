@@ -1,0 +1,15 @@
+{
+  "archive_dir": "./archive",
+  "invoice_archive_dir": "./archive_invoices",
+  "document_types": [
+    "Contract",
+    "Invoice",
+    "Delivery Note",
+    "Payment Receipt",
+    "Other"
+  ],
+  "contract_types": [
+    "Contract",
+    "Sales Contract"
+  ]
+}

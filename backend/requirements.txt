@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+python-multipart
+sqlalchemy
+pydantic
+rapidocr-onnxruntime
+openpyxl
+pillow
+PyMuPDF

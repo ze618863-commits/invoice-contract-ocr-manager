@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice Contract OCR Manager</title>
+    <script>
+      window.onerror = function(message, source, lineno, colno, error) {
+        var errInfo = {
+          message: message,
+          source: source,
+          lineno: lineno,
+          colno: colno,
+          errorStack: error ? error.stack : ''
+        };
+        fetch('/api/log-error', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            type: 'frontend_error',
+            error: errInfo
+          })
+        }).catch(function(e) {});
+        
+        alert("A frontend runtime error occurred. Please send a screenshot to the maintainers:\n\nMessage: " + message + "\nSource: " + source + "\nLine: " + lineno + "\nStack:\n" + (error ? error.stack : ''));
+        return false;
+      };
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
