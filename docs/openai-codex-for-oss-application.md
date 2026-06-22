@@ -18,15 +18,15 @@ Use the email address associated with your ChatGPT account.
 
 ### GitHub username
 
-`<YOUR_GITHUB_USERNAME>`
+`ze618863-commits`
 
 Make sure your GitHub profile is public.
 
 ### GitHub repository URL
 
-`https://github.com/<YOUR_GITHUB_USERNAME>/invoice-contract-ocr-manager`
+`https://github.com/ze618863-commits/invoice-contract-ocr-manager`
 
-Make sure the repository is public.
+The repository is public.
 
 ### Role
 
@@ -34,9 +34,9 @@ Primary maintainer
 
 ### Why is this repository eligible? 500 characters max
 
-Invoice Contract OCR Manager is a local-first open-source tool for OCR-based processing of invoices, contracts, receipts, delivery notes, and related business documents. It helps maintainers and small teams organize private document workflows without SaaS lock-in. The project combines FastAPI, React, RapidOCR, SQLite, and Excel ledger automation, and will accept community work on OCR, i18n, packaging, security, and tests.
+Invoice Contract OCR Manager is a local-first open-source tool for OCR-based processing of invoices, contracts, receipts, delivery notes, and related business documents. It helps small teams organize private document workflows without SaaS lock-in. The repository has CI, v0.1.0 release, roadmap, issue templates, contribution docs, security policy, and synthetic examples.
 
-Character count: 496
+Character count: 398
 
 ### I am interested in
 
@@ -57,9 +57,9 @@ Character count: 391
 
 ### Anything else to share? 500 characters max
 
-The repository is being prepared as an English-first open-source project with private runtime data excluded by default. Local archives, uploads, SQLite databases, virtual environments, build outputs, logs, and scratch files are ignored. The next milestones are a clean public release, CI, synthetic fixtures, improved tests, and safer local deployment documentation.
+The repository is public and prepared as an English-first open-source project with private runtime data excluded by default. It includes a v0.1.0 release, passing CI, MIT license, roadmap, contribution guide, security policy, issue/PR templates, and synthetic examples. The next milestones are English UI cleanup, backend tests, and safer local deployment documentation.
 
-Character count: 363
+Character count: 390
 
 ## Important honesty note
 
